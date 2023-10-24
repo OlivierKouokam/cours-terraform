@@ -1,7 +1,7 @@
 provider "aws" {
   region     = "us-east-1"
-  access_key = "AKIAVXFRXLW4CNW35E22"
-  secret_key = "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"
+  access_key = "****"
+  secret_key = "********"
 }
 
 data "aws_ami" "app_ami" {
@@ -92,7 +92,7 @@ terraform {
     bucket     = "terraform-backend-olivier"
     key        = "terraform.tfstate"
     region     = "us-east-1"
-    access_key = "AKIAVXFRXLW4CNW35E22"
-    secret_key = "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"
+    access_key = "****"
+    secret_key = "********"
   }
 }

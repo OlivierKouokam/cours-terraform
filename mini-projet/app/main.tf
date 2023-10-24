@@ -7,18 +7,21 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket     = "terraform-backend-olivier"
-    key        = "olivier-prod.tfstate"
+    key        = "olivier-miniprojet.tfstate"
     region     = "us-east-1"
     access_key = "****"
     secret_key = "********"
   }
 }
-
+/*
 module "ec2" {
-  source = "../modules/ec2module"
-  instance_type = "t2.micro"
-  sg_name = "prod-olivier-sg"
-    aws_common_tag = {
-        Name : "ec2-prod-olivier"
-    }
+  source = "../modules/ec2_module"
+}
+*/
+module "ebs" {
+  source = "../modules/ebs_module"
+}
+
+module "public_ip" {
+  source = "../modules/public_ip_module"
 }
