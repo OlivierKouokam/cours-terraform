@@ -34,7 +34,3 @@ resource "aws_security_group" "allow_ssh_http_https" {
   }
 }
 
-output "output_sg_name" {
-  value = "${aws_security_group.allow_ssh_http_https.name}"
-  description = "The name of our security group"
-}

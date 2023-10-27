@@ -3,3 +3,7 @@ variable "ebs_size" {
   description = "set ebs size"
   default = 8
 }
+
+variable "AZ" {
+  default = "AZ"
+}

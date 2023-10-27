@@ -1,6 +1,12 @@
+variable "ebs_size" {
+  type        = number
+  description = "set ebs size"
+  default     = 8
+}
+
 variable "key_name" {
   type    = string
-  default = "devops-olivier"
+  default = "devops-olivieraws"
 }
 
 variable "instance_type" {
@@ -17,13 +23,8 @@ variable "aws_common_tag" {
   }
 }
 
-variable "my_az" {
-  type = string
-  description = "set good availability zone"  
-  default = "us-east-1b"
-}
-
 variable "sg_name" {
-  type = string
-  default = "NULL"
+  type        = string
+  description = "set sg name"
+  default     = "miniprojet_olivier_sg"
 }
