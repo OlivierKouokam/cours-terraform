@@ -1,7 +1,7 @@
 provider "aws" {
   region     = "us-east-1"
-  access_key = "AKIAVXFRXLW4JGSYDZGB"
-  secret_key = "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"
+  access_key = "****"
+  secret_key = "********"
 }
 
 terraform {
@@ -9,8 +9,8 @@ terraform {
     bucket     = "terraform-backend-olivier"
     key        = "olivier-miniprojet.tfstate"
     region     = "us-east-1"
-    access_key = "AKIAVXFRXLW4JGSYDZGB"
-    secret_key = "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"
+    access_key = "****"
+    secret_key = "********"
   }
 }
 /*
